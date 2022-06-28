@@ -12,17 +12,23 @@ var velocity = Vector2()
 var noChao = false
 var estavaNoAr = false
 
+onready var sprite = $sprite
+onready var rayCast1 = $rayCast1
+onready var rayCast2 = $rayCast2
+onready var anim = $anim
+onready var animScale = $animScale
+
 func _physics_process(delta):
-	noChao = $rayCast1.is_colliding() || $rayCast2.is_colliding()
+	noChao = rayCast1.is_colliding() or rayCast2.is_colliding() or is_on_floor()
 
 	moveProcess(delta)
 
 	if noChao and Input.is_action_just_pressed("jump"):
 		velocity.y = -JUMP_SPEED
-		$animScale.play("jump")
+		animScale.play("jump")
 		
-	if noChao && estavaNoAr:
-		$animScale.play("fall")
+	if noChao and estavaNoAr:
+		animScale.play("fall")
 
 	animUpdate()
 	
@@ -30,21 +36,21 @@ func _physics_process(delta):
 
 func animUpdate():
 	if dirX > 0:
-		$sprite.flip_h = false
+		sprite.flip_h = false
 	elif dirX < 0:
-		$sprite.flip_h = true
+		sprite.flip_h = true
 
 	var movendo = abs(dirX) > 0
 	if noChao:
 		if movendo:
-			$anim.play("walk")
+			anim.play("walk")
 		else:
-			$anim.play("idle")
+			anim.play("idle")
 	else:
 		if velocity.y <= 0:
-			$anim.play("jump")
+			anim.play("jump")
 		else:
-			$anim.play("fall")
+			anim.play("fall")
 
 func moveProcess(delta):
 	dirX = 0
