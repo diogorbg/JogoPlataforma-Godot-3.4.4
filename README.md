@@ -2,9 +2,11 @@
 
 Exemplo de jogo de plataforma na Godot 3.4.4
 
-![screen](readme/loop2.gif)
+![screen](.readme/loop2.gif)
 
 A proposta é explorar o potencial da Godot criando o mínimo possível de scripts.
+
+![Godot 3.4.4](.readme/godot.png)
 
 ## Game Download
 
