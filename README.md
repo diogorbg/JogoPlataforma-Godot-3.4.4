@@ -17,7 +17,7 @@ https://godotengine.org/asset-library/asset/113
 
 ## Tutorial Godot by  Papai Game Maker
 
-O projeto foi construído seguindo estes vídeos do youtube. Mas alumas coisas precisaram ser modificadas pois estou trabalhando com a a Gogot 3.4.4
+O projeto foi construído seguindo estes vídeos do youtube. Mas alumas coisas precisaram ser modificadas pois estou trabalhando com a Gogot 3.4.4
 
 https://www.youtube.com/watch?v=v1M3hgVIQDs&list=PLQzIfDE4WrykZYdgJedkgH-f4BVVdVVr6
 
