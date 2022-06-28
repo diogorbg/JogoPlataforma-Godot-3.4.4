@@ -6,6 +6,12 @@ Exemplo de jogo de plataforma na Godot 3.4.4
 
 A proposta é explorar o potencial da Godot criando o mínimo possível de scripts.
 
+## Game Download
+
+Confira as versões compiladas em [Releases](https://github.com/diogorbg/JogoPlataforma-Godot-3.4.4/releases).
+
+* [jogoPlataforma_win_v0.1.zip](https://github.com/diogorbg/JogoPlataforma-Godot-3.4.4/releases/download/v0.1/jogoPlataforma_win.zip)
+
 ## 2D Kinematic Character Demo
 
 Example of how to make a kinematic character controller in 2D using KinematicBody2D. The character moves around, is affected by moving platforms, can jump through one-way collision platforms, etc.
