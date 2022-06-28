@@ -23,11 +23,18 @@ Script de movimentação criado a partir deste exemplo.
 https://godotengine.org/asset-library/asset/113
 
 
-## Tutorial Godot by  Papai Game Maker
+## Tutorial Godot by Papai Game Maker
 
 O projeto foi construído seguindo estes vídeos do youtube. Mas alumas coisas precisaram ser modificadas pois estou trabalhando com a Gogot 3.4.4
 
 https://www.youtube.com/watch?v=v1M3hgVIQDs&list=PLQzIfDE4WrykZYdgJedkgH-f4BVVdVVr6
+
+
+## Godot 3 - Aprenda Gdscript Em Um Vídeo! by Canal Palco
+
+Guia rápido sobre a linguagem GDScript
+
+https://www.youtube.com/watch?v=1sQN3uBmnnk
 
 
 ## Arcade Platformer Assets by GrafxKid
