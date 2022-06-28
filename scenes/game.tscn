@@ -241,10 +241,12 @@ region_enabled = true
 region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel/sprite"]
-position = Vector2( 8, -16 )
+position = Vector2( 9, -8 )
 texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -5, -6 )
 region_enabled = true
-region_rect = Rect2( 256, 64, 16, 16 )
+region_rect = Rect2( 259, 74, 11, 6 )
 
 [node name="shape" type="CollisionShape2D" parent="plataformaMovel"]
 visible = false
@@ -266,10 +268,12 @@ region_enabled = true
 region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel2/sprite"]
-position = Vector2( -14, -16 )
+position = Vector2( -12, -8 )
 texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -5, -6 )
 region_enabled = true
-region_rect = Rect2( 256, 64, 16, 16 )
+region_rect = Rect2( 259, 74, 11, 6 )
 
 [node name="shape" type="CollisionShape2D" parent="plataformaMovel2"]
 visible = false
@@ -291,10 +295,13 @@ region_enabled = true
 region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel3/sprite"]
-position = Vector2( 8, -16 )
+position = Vector2( 6, -8 )
 texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -5, -6 )
+flip_h = true
 region_enabled = true
-region_rect = Rect2( 256, 64, 16, 16 )
+region_rect = Rect2( 259, 74, 11, 6 )
 
 [node name="shape" type="CollisionShape2D" parent="plataformaMovel3"]
 visible = false
