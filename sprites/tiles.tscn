@@ -119,9 +119,9 @@ region_rect = Rect2( 258, 74, 12, 6 )
 [node name="tile11" type="Sprite" parent="."]
 position = Vector2( 24, -8 )
 texture = ExtResource( 1 )
-offset = Vector2( 0, -14.5 )
+offset = Vector2( 0, -15 )
 region_enabled = true
-region_rect = Rect2( 213, 3, 38, 45 )
+region_rect = Rect2( 213, 2, 38, 46 )
 
 [node name="tile12" type="Sprite" parent="."]
 position = Vector2( 56, 8 )
