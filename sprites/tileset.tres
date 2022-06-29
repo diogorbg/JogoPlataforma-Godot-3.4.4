@@ -188,7 +188,7 @@ extents = Vector2( 8, 8 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 8/z_index = 0
-9/name = "tile10"
+9/name = "grama"
 9/texture = ExtResource( 1 )
 9/tex_offset = Vector2( 0, 5 )
 9/modulate = Color( 1, 1, 1, 1 )
@@ -201,8 +201,8 @@ extents = Vector2( 8, 8 )
 9/shape_one_way = false
 9/shape_one_way_margin = 0.0
 9/shapes = [  ]
-9/z_index = 0
-10/name = "tile11"
+9/z_index = 1
+10/name = "arvore"
 10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, -15 )
 10/modulate = Color( 1, 1, 1, 1 )

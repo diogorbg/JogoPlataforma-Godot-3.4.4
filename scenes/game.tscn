@@ -243,6 +243,7 @@ region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel/sprite"]
 position = Vector2( 9, -8 )
+z_index = 1
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( -5, -6 )
@@ -271,6 +272,7 @@ region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel2/sprite"]
 position = Vector2( -12, -8 )
+z_index = 1
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( -5, -6 )
@@ -299,6 +301,7 @@ region_rect = Rect2( 208, 48, 48, 16 )
 
 [node name="grama" type="Sprite" parent="plataformaMovel3/sprite"]
 position = Vector2( 6, -8 )
+z_index = 1
 texture = ExtResource( 1 )
 centered = false
 offset = Vector2( -5, -6 )

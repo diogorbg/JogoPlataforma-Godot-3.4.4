@@ -109,14 +109,15 @@ collision_mask = 0
 [node name="shape" type="CollisionShape2D" parent="tile9/staticBody"]
 shape = SubResource( 2 )
 
-[node name="tile10" type="Sprite" parent="."]
+[node name="grama" type="Sprite" parent="."]
 position = Vector2( 40, -8 )
+z_index = 1
 texture = ExtResource( 1 )
 offset = Vector2( 0, 5 )
 region_enabled = true
 region_rect = Rect2( 258, 74, 12, 6 )
 
-[node name="tile11" type="Sprite" parent="."]
+[node name="arvore" type="Sprite" parent="."]
 position = Vector2( 24, -8 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -15 )
