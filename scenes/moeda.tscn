@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/senoid.gd" type="Script" id=1]
+[ext_resource path="res://sprites/arcade_platformerV2.png" type="Texture" id=2]
+[ext_resource path="res://scripts/moeda.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=15]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Rect2( 336, 0, 16, 16 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "loop"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Rect2( 336, 0, 16, 16 ), Rect2( 336, 16, 16, 16 ), Rect2( 336, 32, 16, 16 ), Rect2( 336, 48, 16, 16 ) ]
+}
+
+[sub_resource type="CircleShape2D" id=13]
+
+[node name="moeda" type="Area2D"]
+position = Vector2( 201, 138 )
+collision_layer = 4
+collision_mask = 2
+script = ExtResource( 3 )
+
+[node name="sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 336, 0, 16, 16 )
+script = ExtResource( 1 )
+amplitude = 3
+
+[node name="anim" type="AnimationPlayer" parent="."]
+autoplay = "loop"
+anims/RESET = SubResource( 15 )
+anims/loop = SubResource( 14 )
+
+[node name="shape" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 13 )
+
+[connection signal="body_entered" from="." to="." method="_on_moeda_body_entered"]
