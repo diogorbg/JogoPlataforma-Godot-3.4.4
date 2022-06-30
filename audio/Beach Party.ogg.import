@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Beach Party.ogg-9ace2480a02e539a72c2fbe5b023e71a.oggstr"
+
+[deps]
+
+source_file="res://audio/Beach Party.ogg"
+dest_files=[ "res://.import/Beach Party.ogg-9ace2480a02e539a72c2fbe5b023e71a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0.0
