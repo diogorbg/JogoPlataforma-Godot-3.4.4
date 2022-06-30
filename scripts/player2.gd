@@ -78,5 +78,5 @@ func moveProcess(delta):
 
 func _on_areaAgua_body_entered(body):
 	print(body.name)
-	get_tree().reload_current_scene()
-	pass
+	if get_tree().reload_current_scene() != OK:
+		print("Erro ao recarregar cena!")
