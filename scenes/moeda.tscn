@@ -75,6 +75,7 @@ anims/coletar = SubResource( 16 )
 anims/loop = SubResource( 14 )
 
 [node name="shape" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 13 )
 
 [node name="sfx" type="AudioStreamPlayer" parent="."]
