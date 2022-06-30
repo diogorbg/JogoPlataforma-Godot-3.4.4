@@ -44,3 +44,11 @@ A collection of sprites designed primarily for an arcade-style platformer game. 
 Copyright/Attribution Notice: Credit me as GrafxKid.
 
 https://opengameart.org/content/arcade-platformer-assets
+
+## Music
+
+"Beach Party" Kevin MacLeod (incompetech.com)
+
+Licensed under Creative Commons: By Attribution 4.0 License
+
+http://creativecommons.org/licenses/by/4.0/
