@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://sprites/arcade_platformerV2.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
@@ -169,6 +169,8 @@ tracks/0/keys = {
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 8, 130 )
+
+[sub_resource type="CircleShape2D" id=13]
 
 [node name="game" type="Node2D"]
 
@@ -438,5 +440,17 @@ collision_mask = 2
 visible = false
 position = Vector2( 0, 138 )
 shape = SubResource( 6 )
+
+[node name="coin" type="Area2D" parent="."]
+
+[node name="sprite" type="Sprite" parent="coin"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 336, 0, 16, 16 )
+
+[node name="anim" type="AnimationPlayer" parent="coin"]
+
+[node name="shape" type="CollisionShape2D" parent="coin"]
+shape = SubResource( 13 )
 
 [connection signal="body_entered" from="agua/areaAgua" to="player" method="_on_areaAgua_body_entered"]
