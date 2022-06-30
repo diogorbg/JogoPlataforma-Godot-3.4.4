@@ -12,6 +12,7 @@ var velocity = Vector2()
 var noChao = false
 var estavaNoAr = false
 
+# É recomendado inicializar as referências com onready ou na função _ready
 onready var sprite = $sprite
 onready var rayCast1 = $rayCast1
 onready var rayCast2 = $rayCast2

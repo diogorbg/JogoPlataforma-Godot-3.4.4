@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/senoid.gd" type="Script" id=1]
 [ext_resource path="res://sprites/arcade_platformerV2.png" type="Texture" id=2]
@@ -17,6 +17,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Rect2( 336, 0, 16, 16 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "coletar"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Rect2( 320, 0, 16, 16 ), Rect2( 320, 16, 16, 16 ), Rect2( 320, 32, 16, 16 ), Rect2( 321, 49, 14, 14 ), Rect2( 324, 50, 2, 2 ) ]
 }
 
 [sub_resource type="Animation" id=14]
@@ -39,7 +55,6 @@ tracks/0/keys = {
 [sub_resource type="CircleShape2D" id=13]
 
 [node name="moeda" type="Area2D"]
-position = Vector2( 201, 138 )
 collision_layer = 4
 collision_mask = 2
 script = ExtResource( 3 )
@@ -54,6 +69,7 @@ amplitude = 3
 [node name="anim" type="AnimationPlayer" parent="."]
 autoplay = "loop"
 anims/RESET = SubResource( 15 )
+anims/coletar = SubResource( 16 )
 anims/loop = SubResource( 14 )
 
 [node name="shape" type="CollisionShape2D" parent="."]

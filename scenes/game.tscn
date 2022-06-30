@@ -445,7 +445,7 @@ position = Vector2( 800, 152 )
 position = Vector2( 784, -24 )
 
 [node name="moeda9" parent="moedas" instance=ExtResource( 4 )]
-position = Vector2( 608, -64 )
+position = Vector2( 608, -80 )
 
 [node name="agua" type="Sprite" parent="."]
 position = Vector2( 128, 188 )
