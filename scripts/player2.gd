@@ -10,6 +10,7 @@ const JUMP_SPEED = 250
 var dirX = 0
 var velocity = Vector2()
 var noChao = false
+var pulando = false
 var estavaNoAr = false
 
 # É recomendado inicializar as referências com onready ou na função _ready
@@ -21,14 +22,17 @@ onready var animScale = $animScale
 
 func _physics_process(delta):
 	noChao = rayCast1.is_colliding() or rayCast2.is_colliding() or is_on_floor()
+	if (pulando and velocity.y>=0):
+		pulando = false
 
 	moveProcess(delta)
 
 	if noChao and Input.is_action_just_pressed("jump"):
+		pulando = true
 		velocity.y = -JUMP_SPEED
 		animScale.play("jump")
 		
-	if noChao and estavaNoAr and velocity.y >= 0.0:
+	if noChao and estavaNoAr and not pulando:
 		animScale.play("fall")
 
 	animUpdate()
@@ -42,7 +46,7 @@ func animUpdate():
 		sprite.flip_h = true
 
 	var movendo = abs(dirX) > 0
-	if noChao:
+	if noChao and not pulando:
 		if movendo:
 			anim.play("walk")
 		else:
