@@ -77,7 +77,10 @@ func moveProcess(delta):
 	velocity.y += GRAVITY * delta
 
 	# Move based on the velocity and snap to the ground.
-	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP, true)
+	if not pulando:
+		velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP, true)
+	else:
+		velocity = move_and_slide(velocity)
 
 
 func _on_areaAgua_body_entered(body):
