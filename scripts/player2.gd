@@ -28,7 +28,7 @@ func _physics_process(delta):
 		velocity.y = -JUMP_SPEED
 		animScale.play("jump")
 		
-	if noChao and estavaNoAr:
+	if noChao and estavaNoAr and velocity.y >= 0.0:
 		animScale.play("fall")
 
 	animUpdate()
