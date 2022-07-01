@@ -480,6 +480,90 @@ polygon = PoolVector2Array( -6, 92, 14, 141, 65, 162, 256, 165, 326, 124, 328, 1
 color = Color( 0.258824, 0.678431, 0.215686, 1 )
 polygon = PoolVector2Array( -6, 92, 14, 141, 65, 162, 256, 165, 326, 124, 328, 133, 318, 132, 313.806, 141.434, 302, 140, 299.14, 150.149, 288, 148, 286.043, 157.931, 275, 157, 271.626, 166.497, 263, 166, 259, 174, 248, 167, 238.319, 173.687, 227, 168, 218.346, 173.384, 207, 167, 196.055, 173.046, 182, 167, 169.993, 172.651, 158, 166, 150.236, 172.352, 137, 166, 124.815, 171.967, 112, 166, 101.253, 171.61, 90, 166, 79.8179, 171.285, 71, 166, 61, 171, 57, 163, 49.479, 166.182, 47, 159, 39.3863, 161.962, 36, 154, 27.7071, 157.078, 24, 149, 15.5136, 151.978, 14, 145, 6, 148, 9, 137, 2.2323, 136.461, 5, 127, -2.25069, 122.732, 0, 113, -6.1931, 110.659, -4, 103, -10, 99 )
 
+[node name="objetos" type="Node2D" parent="StaticBody2D"]
+
+[node name="arvore" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 127, 163 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -23 )
+region_enabled = true
+region_rect = Rect2( 213, 2, 38, 46 )
+
+[node name="arvore2" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 80, 163 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -23 )
+region_enabled = true
+region_rect = Rect2( 213, 2, 38, 46 )
+
+[node name="grama" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 139.842, 163.394 )
+z_index = 1
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama2" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 245.473, 164.892 )
+z_index = 1
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama3" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 213.679, 164.661 )
+z_index = 1
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama5" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 310.492, 133.204 )
+rotation = -0.523598
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama6" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 268.161, 158.088 )
+rotation = -0.523598
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama4" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 72.481, 163 )
+z_index = 1
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama7" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 23.3047, 144.985 )
+rotation = 0.395333
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
+[node name="grama8" type="Sprite" parent="StaticBody2D/objetos"]
+position = Vector2( 7.01229, 123.647 )
+rotation = 1.15338
+texture = ExtResource( 1 )
+offset = Vector2( 0, -3 )
+region_enabled = true
+region_rect = Rect2( 259, 74, 11, 6 )
+
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 160, 163 )
 
